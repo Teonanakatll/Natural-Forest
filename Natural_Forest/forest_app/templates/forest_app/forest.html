@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon"/>
+	<link rel="stylesheet" href="{% static 'forest_app/css/main.css' %}"> 
+
+	<!-- defer - скрипт загрузится после загрузки всей страницы. -->
+	<script src="{% static 'forest_app/js/app.js' %}" defer></script>
+	<script src="{% static 'forest_app/libs/rain.js' %}" defer></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="logo">
+		<img src="{% static 'forest_app/img/logo.svg' %}" alt="">
+	</div>
+
+	<section class="layers">
+    <!--	__ - промежуточный слой	-->
+		<div class="layers__container">
+			<div class="layers__item layer1"></div>
+			<div class="layers__item layer2"></div>
+			<div class="layers__item layer3">
+				<div class="hero-content">
+					<h1>Natural Forest <span>HTML / CSSs</span></h1>
+					<div class="hero-content__p">Creating a beautiful 3D website with a 'lens effect'</div>
+					<button class="button-start">Start Learning</button>
+				</div>
+			</div>
+			<div class="layers__item layer4">
+				<canvas class="rain"></canvas>
+			</div>
+			<div class="layers__item layer5"></div>
+			<div class="layers__item layer6"></div>
+		</div>
+	</section>
+
+
+</body>
+</html>
