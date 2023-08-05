@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('forest_app.urls')),
+    path('', include('fairy_forest_app.urls')),
 ]
 
 if settings.DEBUG:

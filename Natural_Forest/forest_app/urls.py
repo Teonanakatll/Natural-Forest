@@ -4,5 +4,5 @@ from forest_app.views import forest
 
 
 urlpatterns = [
-    path('', forest, name='forest')
+    path('natural_forest/', forest, name='forest')
 ]

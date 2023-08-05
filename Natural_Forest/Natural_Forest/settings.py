@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'forest_app.apps.ForestAppConfig',
+    'fairy_forest_app.apps.FairyForestAppConfig',
+
+
 ]
 
 MIDDLEWARE = [
@@ -121,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATICFILES_DIRS = ['']
+STATICFILES_DIRS = []
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')

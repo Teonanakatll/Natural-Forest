@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/main.css' %}">
+
+	<script src="{% static 'fairy_forest_app/libs/gsap/gsap.min.js' %}" defer></script>
+	<script src="{% static 'fairy_forest_app/libs/gsap/ScrollTrigger.min.js' %}" defer></script>
+	<script src="{% static 'fairy_forest_app/libs/gsap/ScrollSmoother.min.js' %}" defer></script>
+
+	<script src="{% static 'fairy_forest_app/js/app.js' %}" defer></script>
+
+</head>
+<body>
+	
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Welcome to Paralax</div>
+						<div class="layers__title">Fairy Forest</div>
+					</div>
+					<div class="layer layers__base"></div>
+					<div class="layer layers__middle" ></div>
+					<div class="layer layers__front"></div>
+				</div>
+			</header>
+
+			<article class="main-article">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2>
+					<p class="main-article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio doloremque
+						corporis consequatur iusto illum quisquam necessitatibus ut libero eligendi unde, ipsa 
+						exercitationem quo dolor id repellendus sit temporibus ipsam, fugiat dolores?</p>
+						
+				</div>
+				<div class="copy">© WebDesign Master</div>
+			</article>
+
+		</div>
+	</div>
+
+</body>
+</html>
