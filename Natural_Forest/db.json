@@ -1,0 +1,360 @@
+[
+{
+   "model": "admin.logentry",
+   "pk": 1,
+   "fields": {
+      "action_time": "2023-08-12T19:40:51.169Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "layer-base",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 2,
+   "fields": {
+      "action_time": "2024-08-30T11:07:51.981Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": " ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 3,
+   "fields": {
+      "action_time": "2024-08-30T11:08:15.262Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": " ",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0434\\u043d\\u0438\\u0439 \\u0444\\u043e\\u043d\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 4,
+   "fields": {
+      "action_time": "2024-08-30T11:20:16.385Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Natural Forest HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"1 \\u0441\\u0442\\u0440\\u043e\\u043a\\u0430 \\u0437\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043a\\u0430\", \"2 \\u0441\\u0442\\u0440\\u043e\\u043a\\u0430 \\u0437\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043a\\u0430\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u043c\\u0435\\u043b\\u043a\\u0438\\u0439 \\u0442\\u0435\\u043a\\u0441\\u0442\", \"\\u041d\\u0430\\u0434\\u043f\\u0438\\u0441\\u044c \\u043d\\u0430 \\u043a\\u043d\\u043e\\u043f\\u043a\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 5,
+   "fields": {
+      "action_time": "2024-08-30T11:22:14.200Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Natural Forest HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u043e\\u0435 \\u0438\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 6,
+   "fields": {
+      "action_time": "2024-08-30T11:25:10.060Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Natural Forest HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0435\\u0440\\u0435\\u0434\\u043d\\u0438\\u0439 \\u043f\\u043b\\u0430\\u043d \\u043f\\u0430\\u0434\\u0430\\u044e\\u0449\\u0438\\u0435 \\u043b\\u0438\\u0441\\u0442\\u044c\\u044f\", \"\\u041f\\u0435\\u0440\\u0435\\u0434\\u043d\\u0438\\u0439 \\u043f\\u043b\\u0430\\u043d \\u043a\\u0430\\u043f\\u043b\\u0438 \\u043d\\u0430 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 7,
+   "fields": {
+      "action_time": "2024-08-30T11:31:12.234Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Natural Forest HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0442\\u0430 \\u043e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 8,
+   "fields": {
+      "action_time": "2024-08-30T11:53:00.313Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Natural Forest HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0427\\u0435\\u0440\\u043d\\u043e\\u0432\\u0438\\u043a\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 9,
+   "fields": {
+      "action_time": "2024-08-30T21:36:59.752Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": " ",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 10,
+   "fields": {
+      "action_time": "2024-08-30T21:46:57.916Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Made of Syava HTML / CSS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"1 \\u0441\\u0442\\u0440\\u043e\\u043a\\u0430 \\u0437\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043a\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 11,
+   "fields": {
+      "action_time": "2024-08-31T09:45:59.772Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Fairy Forest Welcome to Parallax",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 12,
+   "fields": {
+      "action_time": "2024-08-31T15:48:05.228Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Syavin Forest Welcome to Parallich",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 13,
+   "fields": {
+      "action_time": "2024-08-31T15:51:46.063Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Syavin Forest Welcome to Parallich",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0434\\u043d\\u0438\\u0439 \\u043f\\u043b\\u0430\\u043d\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 14,
+   "fields": {
+      "action_time": "2024-08-31T15:52:09.139Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Syavin Forest Welcome to Parallich",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0434\\u043d\\u0438\\u0439 \\u043f\\u043b\\u0430\\u043d\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 15,
+   "fields": {
+      "action_time": "2024-08-31T16:10:08.183Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Syavin Forest Welcome to Parallich",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043f\\u0438\\u0440\\u0430\\u0439\\u0442\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 16,
+   "fields": {
+      "action_time": "2024-08-31T16:10:14.231Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Fairy Forest Welcome to Parallax",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043f\\u0438\\u0440\\u0430\\u0439\\u0442\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 17,
+   "fields": {
+      "action_time": "2024-09-01T18:00:53.369Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Syavin Forest Welcome to Parallich",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 18,
+   "fields": {
+      "action_time": "2024-09-01T18:01:17.070Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Made of Syava HTML / CSS",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "auth.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$600000$vljoTKpGjzlLOdUktG0fkj$w843VOk4uTDMPuA1X1+1S5VQ3rVvGoUITHU+oJJi9bA=",
+      "last_login": "2024-09-01T18:00:25.357Z",
+      "is_superuser": true,
+      "username": "Fox",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-08-12T19:39:00.188Z",
+      "groups": [],
+      "user_permissions": []
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "08b5yn0cn7u8tt9fxhqx5s72h5cf1n9m",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1sk9IS:ZT-yPT7mSvZpv5D9L_xnw_tlrM8pYOILL2gfhooZMDc",
+      "expire_date": "2024-09-13T21:36:44.569Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "17ltperv50x1pjl5kafaiu1fcy70cyf9",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1skosD:w0MioXjxntxao_94vay9T1UMTZOTbBseab-xsSIYCjo",
+      "expire_date": "2024-09-15T18:00:25.364Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "8sn5wdw54xwajmmxsdboyrhew2pxkzbx",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1sjziR:ANRiGd4N1mh5NMguFbCZYZpMyVrl0SUPmter-757ZTE",
+      "expire_date": "2024-09-13T11:22:55.563Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "d8i3hphhctztmmqbnpsaerjclur9gg0w",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1skLbX:861518TwTsszoE3SpFibZ7ppwFtSE5O-pNOhjpJLoUI",
+      "expire_date": "2024-09-14T10:45:15.615Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "ey5fhjh0pwe0rhfyvthu19fcc90a8xja",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSGW4VFcuu83kGEYpGogKe3K-O_apAvd3nPOfYmA21rC1nkJcxIXMYjT7xaRHlx3kO5Yb01Sq-syR7kr8qBdTi3x83q4fwcFe_nWGUGTB-e1cWdlgZEBUDsgjgY4WfBkDDOpNERKpOKYVSYLo2OrshLvD-iXOGk:1qUuSN:lbLOia6pUdySKAfPXOcJt7cayUhn9S0xCMndd4KuDvU",
+      "expire_date": "2023-08-26T19:39:27.110Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "ght5nhiivsqe0xc1opulldb4fb1m6vz8",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1skKaZ:onbZuT0Z3Jr-Sze06f2Hw49MYB9nr1dHISfcZYifjSE",
+      "expire_date": "2024-09-14T09:40:11.495Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "im869m3yti7pb6k10l5lhg93pqf8be5u",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1sjziy:dofx4ByWCeJUi76YLDZk5zYldJ2l-pUhRU3sCI2fiTg",
+      "expire_date": "2024-09-13T11:23:28.052Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "nom4p8sbginyhmyq7xe4x0lzl77chuxw",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1sjzLr:OGmxkAp-eZ7gt8yICm0qBx2NYdSxerY9FSElEAYEOKA",
+      "expire_date": "2024-09-13T10:59:35.110Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "s1f8mwjvlbrnb9ar8e81w3cuqfihu5wp",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1skLq7:0rBnJO5vuZ5pw9jtsv3p7pjctcQOlV6HjcTBzTGBs7A",
+      "expire_date": "2024-09-14T11:00:19.212Z"
+   }
+},
+{
+   "model": "forest_app.naturalforest",
+   "pk": 1,
+   "fields": {
+      "logo": "image/natural_forest/logo/logo.svg",
+      "layer1": "image/natural_forest/layer1/layer-1.png",
+      "layer2": "image/natural_forest/layer2/layer-2.png",
+      "layer3_string1": "Natural Forest",
+      "layer3_string2": "HTML / CSS",
+      "layer3_description": "Creating a beautiful 3d website with a 'lens effect'",
+      "layer3_button": "Start Learning",
+      "layer5": "image/natural_forest/layer5/layer-5.png",
+      "layer6": "image/natural_forest/layer6/layer-6.png",
+      "draft": false,
+      "meta_desc": "Удивительный сайт с потрясающим 3д паралакс эффектом"
+   }
+},
+{
+   "model": "fairy_forest_app.fairyforest",
+   "pk": 1,
+   "fields": {
+      "layer1": "image/fairy_forest/layer1/layer-base.png",
+      "layer2_header": "Fairy Forest",
+      "layer2_title": "Welcome to Parallax",
+      "layer3": "image/fairy_forest/layer3/layer-middle.png",
+      "layer4": "image/fairy_forest/layer4/layer-front.png",
+      "footer_decor": "image/fairy_forest/footer_decor/ground1.png",
+      "footer_bg": "image/fairy_forest/footer_bg/dungeon1.jpg",
+      "footer_header": "To be continued",
+      "footer_text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio doloremque\r\n\t\t\t\t\t\tcorporis consequatur iusto illum quisquam necessitatibus ut libero eligendi unde, ipsa \r\n\t\t\t\t\t\texercitationem quo dolor id repellendus sit temporibus ipsam, fugiat dolores?",
+      "copy": "© WebDesign Master",
+      "draft": false
+   }
+}
+]
