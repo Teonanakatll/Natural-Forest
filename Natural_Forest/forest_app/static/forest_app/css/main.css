@@ -62,7 +62,7 @@ body {
 }
 .layers__item {
   position: absolute;
-  /* vw - относительная единица ширины окна,vh - относительная единица высоты окна. */
+  /* vw - относительная единица ширины окна,vh - относительная единица высоты окна. (отступы са всех сторон)*/
   inset: -6vw;
   /* Чтобы внутренняя часть растягивалась */
   background-size: cover;
@@ -72,11 +72,11 @@ body {
   justify-content: center;
 }
 .layer1 {
-  background-image: url(../img/layer-1.png);
+  /*background-image: url(../img/layer-1.png);*/
   transform: translateZ(-150px) scale(1.2);
 }
 .layer2 {
-  background-image: url(../img/layer-2.png);
+  /*background-image: url(../img/layer-2.png);*/
   transform: translateZ(80px);
 }
 .layer3 {
@@ -86,11 +86,11 @@ body {
   transform: translateZ(190px) scale(.9);
 }
 .layer5 {
-  background-image: url(../img/layer-5.png);
+  /*background-image: url(../img/layer-5.png);*/
   transform: translateZ(300px) scale(.9);
 }
 .layer6 {
-  background-image: url(../img/layer-6.png);
+  /*background-image: url(../img/layer-6.png);*/
   transform: translateZ(380px);
 }
 .hero-content {
@@ -99,11 +99,10 @@ body {
   text-transform: uppercase;
   /* Растояние между символами */
   letter-spacing: calc(var(--index) * -.15);
-  /* 1em – текущий размер шрифта. */
+  /* line-height - растояние между строками. 1em – текущий размер шрифта. */
   line-height: 1.35em;
   /* Привязываем margin-top к --index */
   margin-top: calc(var(--index) * 5.5)
-
 }
 .hero-content span {
   display: block;
@@ -117,17 +116,79 @@ body {
   line-height: 3;
 }
 .button-start {
-  font-family: Arial;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: calc(var(--index) * .7);
-  letter-spacing: -.02vw;
-  padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
-  background-color: transparent;  /* Прозрачный фон */
-  border-radius: 10em;
-  border: rgb(255 255 255 / 1) 3px solid;
-  outline: none;
-  cursor: pointer;
+	font-family: Arial;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: #fff;
+	opacity: 0.7;
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	cursor: pointer;
+	margin-top: calc(var(--index) * 2.5);
+	transition: opacity .25s ease;
+}
+.button-start:hover {
+	opacity: 1;
+}
+.butt {
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid #fff; */
+	height: calc(var(--index) * 2);
+	width: calc(var(--index) * 6);
+	position: absolute;
+	right: 20%;
+	/* transform: translateX(250%); */
+	bottom: calc(var(--index) * 9);
+}
+.arrow {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(var(--index) * 2);
+	border: rgb(255 255 255 / .4) 3px solid;
+	opacity: .7;
+	border-radius: 12em;
+	font-size: calc(var(--index) * 1.2);
+	cursor: pointer;
+	transition: opacity .3s ease, box-shadow .3s ease;
+}
+.arrow:hover, .arrow:focus {
+	opacity: 1;
+	/* box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0.3) */
+}
+.arrow.disabled {
+	cursor: default;
+	opacity: 0.35;
+}
+.arrow a {
+	line-height: calc(var(--index) * 2);
+	width: inherit;
+	text-decoration: none;
+	color: #fff;
+}
+.left {
+	position: relative;
+	right: 3px;
+}
+.right {
+	position: relative;
+    left: -3px;
+}
+.right, .left {
+	bottom: 3px;
+}
+span.left {
+	right: 2px;
+}
+span.right {
+	right: 5px;
 }
 .layer4, .layer5, .layer6 {
   pointer-events: none;  /* Для взаимодействия со слоями ниже, отключаем события слоёв. */

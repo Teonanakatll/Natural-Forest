@@ -1,0 +1,65 @@
+.pag-container {
+	height: calc(var(--index) * 1.5);
+	width: calc(var(--index) * 6);
+	/* border: 3px solid #a6d518; */
+	z-index: 100;
+	position: fixed;
+	bottom: calc(var(--index) * 8);
+	right: calc(var(--index) * 10);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.button-next, .button-prev {
+	height: calc(var(--index) * 1.5);
+	width: calc(var(--index) * 1.5);
+	border: 3px solid #fff;
+	border-radius: 100%;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	transition: border-color .25s ease, box-shadow .25s ease;
+}
+.button-next > a, .button-prev > a {
+	text-decoration: none;
+	display: block;
+	border-radius: 100%;
+	color: #fff;
+	position: relative;
+	bottom: 1px;
+	transition: color .25s ease;
+}
+.button-next > a::before, .button-prev > a::before {
+    content: '';
+    position: absolute;
+	display: block;
+	/*top: 0;*/
+	/*left: 0;*/
+  top: -15px;
+  left: -20px;
+  right: -15px;
+  bottom: -15px;
+	border-radius: 100%;
+    width: calc(var(--index) * 2.5);
+    height: calc(var(--index) * 2.5);
+	/*background: rgba(255, 0, 0, 0.9);*/
+
+}
+.active.button-prev:hover, .active.button-next:hover {
+	border-color: #a6d518;
+	box-shadow: 0 0 20px #d9d928;
+}
+.disabled.button-prev, .disabled.button-next {
+	opacity: 0.3;
+}
+.button-next:hover a, .button-prev:hover a {
+	color: #a6d518;
+}
+span {
+	display: block;
+	position: relative;
+	bottom: 1px;
+	cursor: default;
+}

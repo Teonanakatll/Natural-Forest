@@ -1,0 +1,19 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+<!-- Для подключения нащих стилей присываем в блок extrastyle, который нах. в хедере родительского шаблона -->
+{% block extrastyle %}
+<!-- Создать admin.css -->
+<link rel="stylesheet" href="{% static 'fairy_forest_app/css/admin.css' %}">
+{% endblock %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% if user.is_anonymous %}
+  {% include "admin/color_theme_toggle.html" %}
+{% endif %}
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

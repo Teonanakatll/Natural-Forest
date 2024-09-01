@@ -26,14 +26,14 @@ body {
 .main-header {
 	position: relative;
 }
-.main-header::after {
+.main-article__ground {
 	content: '';
 	position: absolute;
 	z-index: 100;
 	width: 100%;
 	height: calc(var(--index) * 5);
-	background-image: url(../img/ground1.png);
-	bottom: calc(var(--index) * -2);
+	/* bottom: calc(var(--index) * -2); */
+	top: calc(var(--index) * -2.7);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -60,7 +60,6 @@ body {
 	transition: var(--transition);
 }
 .layers__base {
-	background-image: url(../img/layer-base.png);
 	/* translate3d() Сдвигает элемент на заданное значение в трёхмерном пространстве.
 	 Здесь: tx — смещение по оси X; ty — смещение по оси Y; tz — смещение по оси Z.
 	  tz не может указываться в процентах, в этом случае функция игнорируется. */
@@ -68,11 +67,9 @@ body {
 	z-index: 0;
 }
 .layers__middle {
-	background-image: url(../img/layer-middle.png);
 	transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
 }
 .layers__front {
-	background-image: url(../img/layer-front.png);
 	transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
 }
 .layer__header {
@@ -85,17 +82,17 @@ body {
 	color: var(--text);
 	text-shadow: 0 0 20px #d9d928;
 }
-.layers__title {
+.layers__header {
 	font-size: calc(var(--index) * 2.7);
 	letter-spacing: calc(var(--index) / 2.5);
 }
-.layers__caption {
+.layers__title {
 	font-size: calc(var(--index) / 1.1);
 	letter-spacing: calc(var(--index) / 3.5);
 	margin-top: calc(var(--index) * -0.5);
 }
 .main-article {
-	background-image: url(../img/dungeon1.jpg);
+	/*Обьявляем переменную transform*/
 	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
 	min-height: 100vh;
 	color: var(--text);
@@ -130,6 +127,7 @@ body {
 	position: absolute;
 	bottom: calc(var(--index) * 1.5);
 	font-size: calc(var(--index) / 1.2);
+	/*Прозрачность*/
 	opacity: .45;
 	letter-spacing: calc(var(--index) / 20);
 }

@@ -6,35 +6,68 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon"/>
-	<link rel="stylesheet" href="{% static 'forest_app/css/main.css' %}"> 
+
+	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/pagination.css' %}">
+	<link rel="stylesheet" href="{% static 'forest_app/css/main.css' %}">
+	<meta name="description" content="{{ page.0.meta_desc }}">
 
 	<!-- defer - скрипт загрузится после загрузки всей страницы. -->
 	<script src="{% static 'forest_app/js/app.js' %}" defer></script>
 	<script src="{% static 'forest_app/libs/rain.js' %}" defer></script>
-	<title>Document</title>
+	<title>{{ page.0.layer3_string1}} {{ page.0.layer3_string2 }}</title>
 </head>
 <body>
 	<div class="logo">
-		<img src="{% static 'forest_app/img/logo.svg' %}" alt="">
+		<img src="{{ page.0.logo.url }}" alt="">
 	</div>
 
 	<section class="layers">
     <!--	__ - промежуточный слой	-->
 		<div class="layers__container">
-			<div class="layers__item layer1"></div>
-			<div class="layers__item layer2"></div>
+			<div class="layers__item layer1" style="background-image: url({{ page.0.layer1.url }})"></div>
+			<div class="layers__item layer2" style="background-image: url({{ page.0.layer2.url }})"></div>
 			<div class="layers__item layer3">
 				<div class="hero-content">
-					<h1>Natural Forest <span>HTML / CSSs</span></h1>
-					<div class="hero-content__p">Creating a beautiful 3D website with a 'lens effect'</div>
-					<button class="button-start">Start Learning</button>
+					<h1>{{ page.0.layer3_string1 }} <span>{{ page.0.layer3_string2 }}</span></h1>
+					<div class="hero-content__p">{{ page.0.layer3_description }}</div>
+					<button class="button-start">{{ page.0.layer3_button }}</button>
+
+				<div class="pag-container">
+				{% if page.has_previous %}
+					<div class="button-prev active"><a href="?page={{ page.previous_page_number }}"><</a></div>
+				{% else %}
+					<div class="button-prev disabled"><span><</span></div>
+				{% endif %}
+
+				{% if page.has_next %}
+					<div class="button-next active"><a href="?page={{ page.next_page_number }}">></a></div>
+				{% else %}
+					<div class="button-next disabled"><span>></span></div>
+				{% endif %}
+
+			</div>
+
+					<div class="butt">
+						{% if page.has_previous %}
+							<div class="arrow"><a href="?page={{ page.previous_page_number }}" class="left"><</a></div>
+						{% else %}
+							<div class="arrow disabled"><span class="left"><</span></div>
+						{% endif %}
+
+						{% if page.has_next %}
+							<div class="arrow"><a href="?page={{ page.next_page_number }}" class="right">></a></div>
+						{% else %}
+							<div class="arrow disabled"><span class="right">></span></div>
+						{% endif %}
+					</div>
+
 				</div>
 			</div>
 			<div class="layers__item layer4">
 				<canvas class="rain"></canvas>
 			</div>
-			<div class="layers__item layer5"></div>
-			<div class="layers__item layer6"></div>
+			<div class="layers__item layer5" style="background-image: url({{ page.0.layer5.url }})"></div>
+			<div class="layers__item layer6" style="background-image: url({{ page.0.layer6.url }})"></div>
 		</div>
 	</section>
 

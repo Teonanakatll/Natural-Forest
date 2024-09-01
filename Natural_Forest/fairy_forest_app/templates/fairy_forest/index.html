@@ -7,8 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Document</title>
+	<title>{{ page.0.layer2_header }} {{ page.0.layer2_title }}</title>
 
+	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/pagination.css' %}">
 	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/main.css' %}">
 
 	<script src="{% static 'fairy_forest_app/libs/gsap/gsap.min.js' %}" defer></script>
@@ -19,6 +20,21 @@
 
 </head>
 <body>
+
+	<div class="pag-container">
+		{% if page.has_previous %}
+			<div class="button-prev active"><a href="?page={{ page.previous_page_number }}"><</a></div>
+		{% else %}
+			<div class="button-prev disabled"><span><</span></div>
+		{% endif %}
+
+		{% if page.has_next %}
+			<div class="button-next active"><a href="?page={{ page.next_page_number }}">></a></div>
+		{% else %}
+		 	<div class="button-next disabled"><span>></span></div>
+		{% endif %}
+
+	</div>
 	
 	<div class="wrapper">
 		<div class="content">
@@ -26,21 +42,20 @@
 			<header class="main-header">
 				<div class="layers">
 					<div class="layer__header">
-						<div class="layers__caption">Welcome to Paralax</div>
-						<div class="layers__title">Fairy Forest</div>
+						<div class="layers__title">{{ page.0.layer2_title }}</div>
+						<div class="layers__header">{{ page.0.layer2_header }}</div>
 					</div>
-					<div class="layer layers__base"></div>
-					<div class="layer layers__middle" ></div>
-					<div class="layer layers__front"></div>
+					<div class="layer layers__base" style="background-image: url({{ page.0.layer1.url }})"></div>
+					<div class="layer layers__middle" style="background-image: url({{ page.0.layer3.url }})"></div>
+					<div class="layer layers__front" style="background-image: url({{ page.0.layer4.url }})"></div>
 				</div>
 			</header>
 
-			<article class="main-article">
+			<article class="main-article" style="background-image: url({{ page.0.footer_bg.url }})">
+				<div class="main-article__ground" style="background-image: url({{ page.0.footer_decor.url }})"></div>
 				<div class="main-article__content">
-					<h2 class="main-article__header">To be continued</h2>
-					<p class="main-article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio doloremque
-						corporis consequatur iusto illum quisquam necessitatibus ut libero eligendi unde, ipsa 
-						exercitationem quo dolor id repellendus sit temporibus ipsam, fugiat dolores?</p>
+					<h2 class="main-article__header">{{ page.0.footer_header }}</h2>
+					<p class="main-article__paragraph">{{ page.0.footer_text }}</p>
 						
 				</div>
 				<div class="copy">© WebDesign Master</div>
