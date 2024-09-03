@@ -238,7 +238,7 @@
    "pk": 1,
    "fields": {
       "password": "pbkdf2_sha256$600000$vljoTKpGjzlLOdUktG0fkj$w843VOk4uTDMPuA1X1+1S5VQ3rVvGoUITHU+oJJi9bA=",
-      "last_login": "2024-09-01T18:00:25.357Z",
+      "last_login": "2024-09-03T17:40:16.581Z",
       "is_superuser": true,
       "username": "Fox",
       "first_name": "",
@@ -265,6 +265,14 @@
    "fields": {
       "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1skosD:w0MioXjxntxao_94vay9T1UMTZOTbBseab-xsSIYCjo",
       "expire_date": "2024-09-15T18:00:25.364Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "24l2f99ahdk7h9apok9az668qcbtjrer",
+   "fields": {
+      "session_data": ".eJxVjDsOwyAQBe9CHaEF8U2ZPmdACwvBSQSSsSsrd48tuUjaNzNvYwHXpYZ15DlMxK5MsMvvFjG9cjsAPbE9Ok-9LfMU-aHwkw5-75Tft9P9O6g46l4rIpsAIHuNDo20mKyWpQiSXvnitAGVpUyStHamZKHJx11wUSkBENnnC9tKN3M:1slXVo:PGPMkBjuINywfoGr5jaOleJsu6uNyWjgonOZIrBVt4o",
+      "expire_date": "2024-09-17T17:40:16.585Z"
    }
 },
 {
