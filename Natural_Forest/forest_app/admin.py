@@ -12,6 +12,7 @@ class NaturalForestAdmin(admin.ModelAdmin):
     readonly_fields = ('get_header', 'get_layer1', 'get_layer2', 'get_layer5', 'get_layer6', 'get_logo',
                        'size_layer1', 'size_layer2', 'size_layer5', 'size_layer6')
     list_editable = ('draft',)
+    save_as = True
 
     fieldsets = (
         ('Логотип, задний фон, layer2', {
