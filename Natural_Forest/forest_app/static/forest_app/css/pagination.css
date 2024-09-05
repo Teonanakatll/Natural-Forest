@@ -1,3 +1,4 @@
+/*Пагинация*/
 .pag-container {
 	height: calc(var(--index) * 1.5);
 	width: calc(var(--index) * 6);
@@ -20,7 +21,7 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 20px;
-	transition: border-color .25s ease, box-shadow .25s ease;
+	transition: border-color .25s ease, box-shadow .25s ease-in;
 }
 .button-next > a, .button-prev > a {
 	text-decoration: none;
@@ -29,11 +30,11 @@
 	color: #fff;
 	position: relative;
 	bottom: 1px;
-	transition: color .25s ease;
+	transition: color .25s ease-in;
 }
 .button-next > a::before, .button-prev > a::before {
-    content: '';
-    position: absolute;
+  content: '';
+  position: absolute;
 	display: block;
 	/*top: 0;*/
 	/*left: 0;*/
@@ -42,8 +43,8 @@
   right: -15px;
   bottom: -15px;
 	border-radius: 100%;
-    width: calc(var(--index) * 2.5);
-    height: calc(var(--index) * 2.5);
+  width: calc(var(--index) * 2.5);
+  height: calc(var(--index) * 2.5);
 	/*background: rgba(255, 0, 0, 0.9);*/
 
 }
@@ -62,4 +63,44 @@ span {
 	position: relative;
 	bottom: 1px;
 	cursor: default;
+}
+/*Конец пагинации*/
+
+.button-start {
+	font-family: Arial;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .71);
+	letter-spacing: -.02vw;
+	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
+	background-color: transparent;
+	color: #fff;
+	opacity: 0.7;
+	border-radius: 10em;
+	border: rgb(255 255 255 / .4) 3px solid;
+	outline: none;
+	cursor: pointer;
+	margin-top: calc(var(--index) * 2.5);
+	transition: .25s ease-in;
+}
+
+.button-start.home {
+	position: fixed;
+	bottom: calc(var(--index) * 8.5);
+	left: calc(var(--index) * 12);
+	/* height: calc(var(--index) * 1.5);
+	width: calc(var(--index) * 6); */
+	font-weight: 200;
+	font-size: calc(var(--index) * .4);
+	padding: calc(var(--index) * .4) calc(var(--index) * .8);
+	display: flex;
+	align-items: center;
+	z-index: 100;
+}
+
+.button-start:hover {
+	opacity: 1;
+	border-color: #a6d518;
+	box-shadow: 0 0 20px #d9d928;
+	color: #a6d518;
 }

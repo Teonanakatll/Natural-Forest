@@ -12,7 +12,7 @@ class FairyForest(models.Model):
     layer3 = models.ImageField('Средний план', upload_to='image/fairy_forest/layer3/', blank=True)
     layer4 = models.ImageField('Передний план', upload_to='image/fairy_forest/layer4/', blank=True)
     footer_decor = models.ImageField('Декор между экранами', upload_to='image/fairy_forest/footer_decor/', blank=True)
-    footer_bg = models.ImageField('Фон футера', upload_to='image/fairy_forest/footer_bg/')
+    footer_bg = models.ImageField('Фон футера', upload_to='image/fairy_forest/footer_bg/', blank=True)
     footer_header = models.CharField('Заголовок футера', max_length=40, blank=True)
     footer_text = models.TextField('Текст футера', blank=True)
     copy = models.CharField('Копирайт', max_length=255, blank=True)

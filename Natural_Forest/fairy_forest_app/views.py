@@ -23,4 +23,4 @@ def fairy_forest(request):
         'page': page
     }
 
-    return render(request, 'fairy_forest/index.html', context=context)
+    return render(request, 'fairy_forest/fairy.html', context=context)

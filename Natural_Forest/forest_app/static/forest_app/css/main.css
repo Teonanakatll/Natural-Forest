@@ -23,6 +23,17 @@
   src: url(../fonts/merriweather-regular-italic.woff2);
 }
 
+@font-face {
+	font-family: saira-medium;
+	src: url(../fonts/saira-extracondensed-medium.woff2);
+	font-weight: 500;
+}
+@font-face {
+	font-family: bauhaus;
+	src: url(../fonts/bauhaus.woff2);
+	font-weight: 400;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -63,7 +74,7 @@ body {
 .layers__item {
   position: absolute;
   /* vw - относительная единица ширины окна,vh - относительная единица высоты окна. (отступы са всех сторон)*/
-  inset: -6vw;
+  inset: -5vw;
   /* Чтобы внутренняя часть растягивалась */
   background-size: cover;
   background-position: center;
@@ -73,14 +84,14 @@ body {
 }
 .layer1 {
   /*background-image: url(../img/layer-1.png);*/
-  transform: translateZ(-150px) scale(1.2);
+  transform: translateZ(-55px) scale(1.06);
 }
 .layer2 {
   /*background-image: url(../img/layer-2.png);*/
-  transform: translateZ(80px);
+  transform: translateZ(80px) scale(.88);
 }
 .layer3 {
-  transform: translateZ(180px) scale(.88);
+  transform: translateZ(180px) scale(.8);
 }
 .layer4 {
   transform: translateZ(190px) scale(.9);
@@ -130,10 +141,13 @@ body {
 	outline: none;
 	cursor: pointer;
 	margin-top: calc(var(--index) * 2.5);
-	transition: opacity .25s ease;
+	transition: .25s ease-out;
 }
 .button-start:hover {
 	opacity: 1;
+	border-color: #a6d518;
+	box-shadow: 0 0 20px #d9d928;
+	color: #a6d518;
 }
 .butt {
 	display: flex;

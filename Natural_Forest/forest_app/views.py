@@ -4,6 +4,9 @@ from django.shortcuts import render, get_object_or_404
 from forest_app.models import NaturalForest
 
 
+def index(request):
+    return render(request, 'forest_app/index.html')
+
 def forest(request):
     pages = NaturalForest.objects.filter(draft=False)
 
@@ -16,4 +19,4 @@ def forest(request):
     except EmptyPage:
         page = paginator.get_page(paginator.num_pages)
 
-    return render(request, 'forest_app/forest.html', locals())
+    return render(request, 'forest_app/natural.html', locals())

@@ -2,14 +2,14 @@
 {% load static %}
 <html lang="en">
 <head>
-
+	{% include 'google/google.html' %}
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>{{ page.0.layer2_header }} {{ page.0.layer2_title }}</title>
 
-	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/pagination.css' %}">
+	<link rel="stylesheet" href="{% static 'forest_app/css/pagination.css' %}">
 	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/main.css' %}">
 
 	<script src="{% static 'fairy_forest_app/libs/gsap/gsap.min.js' %}" defer></script>
@@ -35,6 +35,10 @@
 		{% endif %}
 
 	</div>
+
+	<a href="{% url 'index' %}">
+		<button class="button-start home">На главную</button>
+	</a>
 	
 	<div class="wrapper">
 		<div class="content">
