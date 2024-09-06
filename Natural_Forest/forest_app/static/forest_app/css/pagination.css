@@ -1,3 +1,10 @@
+:root {
+  /* Отношение ширины экрана к высоте */
+  --index: calc(1vw + 1vh);
+  /* Кастомноя анимация */
+  --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+}
+
 /*Пагинация*/
 .pag-container {
 	height: calc(var(--index) * 1.5);

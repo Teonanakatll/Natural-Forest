@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('forest_app.urls')),
     path('', include('fairy_forest_app.urls')),
+    path('', include('witcher.urls')),
 ]
 
 if settings.DEBUG:

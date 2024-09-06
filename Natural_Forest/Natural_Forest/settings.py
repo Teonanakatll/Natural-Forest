@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 
     'forest_app.apps.ForestAppConfig',
     'fairy_forest_app.apps.FairyForestAppConfig',
+    'witcher.apps.WitcherConfig',
 
 
 ]

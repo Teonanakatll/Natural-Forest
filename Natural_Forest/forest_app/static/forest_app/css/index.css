@@ -1,3 +1,49 @@
+/* * - глобально применить стили ко всем элементам */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* root - корневой элемени, html */
+:root {
+  /* Отношение ширины экрана к высоте */
+  --index: calc(1vw + 1vh);
+  /* Кастомноя анимация */
+  --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+}
+
+@font-face {
+  font-family: kamerik-3d;
+  src: url(../fonts/kamerik205-heavy.woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: merriweather-italic-3d;
+  src: url(../fonts/merriweather-regular-italic.woff2);
+}
+
+@font-face {
+	font-family: saira-medium;
+	src: url(../fonts/saira-extracondensed-medium.woff2);
+	font-weight: 500;
+}
+@font-face {
+	font-family: bauhaus;
+	src: url(../fonts/bauhaus.woff2);
+	font-weight: 400;
+}
+@font-face {
+	font-family: popp;
+	src: url(../fonts/Poppins-Regular.woff2);
+	font-weight: 400;
+}
+@font-face {
+	font-family: popp;
+	src: url(../fonts/Poppins-SemiBold.woff2);
+	font-weight: 600;
+}
+
 .layers__item.layer2 {
 	flex-direction: column;
 	align-items: start;
@@ -6,13 +52,11 @@
 	/* display: flex; */
 }
 
-.btn {
-	margin-bottom: calc(var(--index) * 2);
-}
 
 /* Неоновая кнопка */
 .button1 {
 	margin-left: calc(var(--index) * 8);
+	margin-bottom: calc(var(--index) * 2);
 	font-family: saira-medium, sans-serif;
 	font-size: calc(var(--index) * 1.3);
 	position: relative;
@@ -64,7 +108,7 @@
 .button1:hover .button__line--left {
 	bottom: 100%;
 	transition: 1s;
-	transition-delay: 0;
+	transition-delay: 0s;
 }
 .button__line--right {
 	top: -100%;
@@ -76,7 +120,7 @@
 .button1:hover .button__line--right {
 	top: 100%;
 	transition: 1s;
-	transition-delay: 0;
+	transition-delay: 0s;
 }
 .button1:hover {
 	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 60px #2196f3;
@@ -90,6 +134,8 @@
 .button2 {
 	display: block;
 	margin-left: calc(var(--index) * 8);
+	margin-bottom: calc(var(--index) * 2);
+
 	padding: calc(var(--index) / 1.5) calc(var(--index) * 1.3);
 	text-transform: uppercase;
 	font-size: calc(var(--index) * 1.3);
@@ -118,6 +164,7 @@
 	top: 0;
 	left: 0;
 	margin-left: calc(var(--index) * 8);
+	margin-bottom: calc(var(--index) * 2);
 	width: calc(var(--index) * 10.5);
 	height: calc(var(--index) * 3);
 }
@@ -176,7 +223,7 @@
 	height: 10px;
 	background: #f00;
 	border-radius: 10px;
-	transition: .5s ease-in;
+	transition: .25s ease;
 	transition-delay: .5s;
 	z-index: -5;
 	filter: blur(3px);
@@ -199,7 +246,7 @@
 	height: 10px;
 	background: #f00;
 	border-radius: 10px;
-	transition: .5s ease-in;
+	transition: .25s ease;
 	transition-delay: .5s;
 	z-index: -50;
 	filter: blur(3px);
@@ -217,3 +264,118 @@
 	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, 0 0 60px #ff1f71;
 }
 /* Конец светящейся кнопки */
+
+/* Кнопка с бликами */
+.button4 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: calc(var(--index) * 8);
+	margin-bottom: calc(var(--index) * 2);
+	width: calc(var(--index) * 10.5);
+	height: calc(var(--index) * 3);
+	/* border: 1px solid #000; */
+
+	font-family: popp, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: calc(var(--index) * .9);
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	transition: scale .25s ease-in;
+}
+
+.button4__content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	border-radius: calc(var(--index) * .8);
+	overflow: hidden;
+}
+.button4__text {
+	position: relative;
+	z-index: 10;
+}
+/* Button shapes */
+.button4__content div {
+	width: calc(var(--index) * 4.5);
+	height: calc(var(--index) * 4.5);
+	border-radius: 50%;
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	filter: blur(20px);
+}
+.button4__shape-1 {
+	background-color: #EA047E;
+	transform: translate(calc(var(--index) * -3), calc(var(--index) * -.5));
+	animation: shape-1 6s 1s ease-out infinite;
+}
+.button4__shape-2 {
+	background-color: #FF6D28;
+	transform: translate(calc(var(--index) * -.5), calc(var(--index) * .8));
+	animation: shape-2 6s ease-in infinite;
+}
+.button4__shape-3 {
+	background-color: #FCE700;
+	transform: translate(calc(var(--index) * 2), calc(var(--index) * -.8));
+	animation: shape-3 6s ease-out infinite;
+}
+.button4__shape-4 {
+	background-color: #00F5FF;
+	transform: translate(calc(var(--index) * 3.8), calc(var(--index) * .3));
+	animation: shape-4 6s ease-out infinite;
+}
+/* Button shadow */
+.button4__shadow {
+	width: 80%;
+	height: 1rem;
+	background: linear-gradient(80deg,
+					 #EA047E 10%,
+					 #FF6D28 30%,
+					 #dbd900 60%,
+					 #00F5FF 90%);
+	border-radius: 4rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -6px;
+	margin: 0 auto;
+	z-index: -1;
+	filter: blur(12px);
+	opacity: 0;
+	transition: opacity .5s;
+}
+.button4:hover .button4__shadow {
+	opacity: 1;
+}
+.button4:hover {
+	scale: 1.05;
+}
+/* Animate shapes */
+@keyframes shape-1 {
+	33%{
+		transform: translate(calc(var(--index) * -2.3), calc(var(--index) * -.2));
+	}
+}
+@keyframes shape-2 {
+	33%{
+		transform: translate(calc(var(--index) * -1.2), calc(var(--index) * .8));
+	}
+}
+@keyframes shape-3 {
+	33%{
+		transform: translate(calc(var(--index) * 1.5), calc(var(--index) * .8));
+	}
+}
+@keyframes shape-4 {
+	33%{
+		transform: translate(calc(var(--index) * 2.5), calc(var(--index) * -1.1));
+	}
+}
+/* Конец кнопки с бликами */

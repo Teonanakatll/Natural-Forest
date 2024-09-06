@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	{% include 'google/google.html' %}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="" type="image/x-icon"/>
+	<link rel="stylesheet" href="{% static 'witcher/libs/swiper/swiper-bundle.min.css' %}">
+	<link rel="stylesheet" href="{% static 'forest_app/css/pagination.css' %}">
+
+	<!-- defer - скрипт загрузится после загрузки всей страницы. -->
+	<script src="{% static 'witcher/libs/swiper/swiper-bundle.min.js' %}" defer></script>
+	<script src="{% static 'witcher/libs/particles/particles.js' %}" defer></script>
+
+	<link rel="stylesheet" href="{% static 'witcher/css/main.css' %}">
+	<script src="{% static 'witcher/js/app.js' %}" defer></script>
+	<title>Document</title>
+</head>
+<body>
+
+	<!-- По документации к swiper.js определяем класс .swiper -->
+	<div class="swiper slider">
+
+		<!-- Обязательный дочерний класс .swiper-wrapper -->
+		<div class="swiper-wrapper slider__wrapper">
+
+			{% for slide in slides %}
+				<!-- Обязательный технический класс .swiper-slide -->
+				<div class="swiper-slide slider__item">
+					<div class="slider__layer" data-swiper-parallax="42%" style="background-image: url({{ slide.layer1.url }})"></div>
+					<div class="slider__layer" data-swiper-parallax="31%" style="background-image: url({{ slide.layer2.url}})"></div>
+					{% if slide.layer3 %}
+						<div class="slider__layer" data-swiper-parallax="26%" style="background-image: url({{ slide.layer3.url }})"></div>
+					{% endif %}
+					<canvas class="particles slider__layer" data-color="#{{ slide.particles_color }}" data-swiper-parallax="20%"></canvas>
+					<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({{ slide.layer4.url }})"></div>
+
+					<a href="{% url 'index' %}">
+						<button class="button-start home">На главную</button>
+					</a>
+
+				</div>
+			{% endfor %}
+<!--			<div class="swiper-slide slider__item">-->
+<!--				<div class="slider__layer" data-swiper-parallax="42%" style="background-image: url({% static 'witcher/img/screen-2/layer-back.jpg' %})"></div>-->
+<!--				<div class="slider__layer" data-swiper-parallax="31%" style="background-image: url({% static 'witcher/img/screen-2/layer-gera.png' %})"></div>-->
+<!--				<div class="slider__layer" data-swiper-parallax="26%" style="background-image: url({% static 'witcher/img/screen-2/layer-yen.png' %})"></div>-->
+<!--				<canvas class="particles slider__layer" data-color="#55963C" data-swiper-parallax="20%"></canvas>-->
+<!--				<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({% static 'witcher/img/screen-2/layer-front.png' %})"></div>-->
+<!--			</div>-->
+
+<!--			<div class="swiper-slide slider__item">-->
+<!--				<div class="slider__layer" data-swiper-parallax="42%" style="background-image: url({% static 'witcher/img/screen-3/layer-back.jpg' %})"></div>-->
+<!--				<div class="slider__layer" data-swiper-parallax="31%" style="background-image: url({% static 'witcher/img/screen-3/layer-middle.png' %})"></div>-->
+<!--				<div class="slider__layer" data-swiper-parallax="26%" style="background-image: url({% static 'witcher/img/screen-3/layer-ciri.png' %})"></div>-->
+<!--				<canvas class="particles slider__layer" data-color="#CF6B65" data-swiper-parallax="20%"></canvas>-->
+<!--				<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({% static 'witcher/img/screen-3/layer-front.png' %})"></div>-->
+<!--			</div>-->
+
+		</div>
+	</div>
+
+
+</body>
+</html>

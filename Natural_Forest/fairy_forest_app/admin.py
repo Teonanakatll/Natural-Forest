@@ -21,7 +21,7 @@ class FairyForestAdmin(admin.ModelAdmin):
         }),
         ('Слои нижнего экрана, черновик и копирайт', {
             'fields': (('footer_decor', 'get_footer_decor', 'size_footer_decor'), ('footer_bg', 'get_footer_bg', 'size_footer_bg'),
-                       ('footer_header',), ('footer_text',),('copy',), ('draft',))
+                       ('footer_header',), ('footer_text',), ('copy',), ('draft',))
         }),
     )
 
