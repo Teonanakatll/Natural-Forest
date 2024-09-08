@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon"/>
-	<title>Document</title>
+	<title>Шаблоны красивых сайтов, выполненных с различными эффектами параллакса и 3d. C помощью swiper.js, gsap.js или на чистом css.</title>
 	<link rel="stylesheet" href="{% static 'forest_app/css/main.css' %}">
 	<link rel="stylesheet" href="{% static 'forest_app/css/index.css' %}">
 	<script src="{% static 'forest_app/js/app.js' %}" defer></script>
@@ -18,15 +18,20 @@
 	<section class="layers">
 		<div class="layers__container">
 			<div class="layers__item layer1" style="background-image: url({% static 'forest_app/img/bg/bg4.jpg' %})"></div>
+<!--			<div class="layers__item layer1">-->
+<!--				<video src="{% static 'video/abstract_30fps.mp4' %}" class="video-background" autoplay loop muted></video>-->
+<!--			</div>-->
+
 			<div class="layers__item layer2">
 
-				<a href="{% url 'natural_forest' %}" class="btn button1">
-					<span class="button__line button__line--top"></span>
-					<span class="button__line button__line--right"></span>
-					<span class="button__line button__line--bottom"></span>
-					<span class="button__line button__line--left"></span>
-					Natural Forest
-				</a>
+
+					<a href="{% url 'natural_forest' %}" class="btn button1">
+						<span class="button__line button__line--top"></span>
+						<span class="button__line button__line--right"></span>
+						<span class="button__line button__line--bottom"></span>
+						<span class="button__line button__line--left"></span>
+						Natural Forest
+					</a>
 
 				<a href="{% url 'fairy_forest' %}" class="btn button2">Fairy Forest</a>
 
@@ -34,9 +39,9 @@
 					<a href="{% url 'witcher' %}">Witcher pages</a>
 				</div>
 
-				<a href="#" class="button4">
+				<a href="{% url 'fire' %}" class="button4">
 					<div class="button4__content">
-						<span class="button4__text">Prostoy textic</span>
+						<span class="button4__text">Fire Animation</span>
 
 						<div class="button4__shape-1"></div>
 						<div class="button4__shape-2"></div>
@@ -47,17 +52,21 @@
 					<div class="button4__shadow"></div>
 				</a>
 
+				<div class="button5">
+					<video src="{% static 'forest_app/video/240.mp4' %}" autoplay loop muted></video>
+					<a href="#">Creative Scroll</a>
+				</div>
+			</div>
+
 			</div>
 				
-			</div>
-
-			<div class="layers__item layer4">
-				<canvas class="rain"></canvas>
-			</div>
-
-
-
 		</div>
+
+		<div class="layers__item layer4">
+			<canvas class="rain"></canvas>
+		</div>
+
+
 	</section>
 	
 </body>

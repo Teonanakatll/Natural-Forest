@@ -11,7 +11,14 @@ a:link, a:visited, h1 {
     color: #d93beb;
     font-weight: 600;
 }
+td img, .form-row img, video {
+    transition: .3s ease;
+}
 td img:hover, .form-row img:hover{
     width: 100%;
     height: 100%;
+}
+.field-get_video:hover video{
+    width: 100% !important;
+    height: 100% !important;
 }

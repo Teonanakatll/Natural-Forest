@@ -16,7 +16,7 @@
 
 	<link rel="stylesheet" href="{% static 'witcher/css/main.css' %}">
 	<script src="{% static 'witcher/js/app.js' %}" defer></script>
-	<title>Document</title>
+	<title>Горизонтальный параллакс</title>
 </head>
 <body>
 
@@ -37,30 +37,15 @@
 					<canvas class="particles slider__layer" data-color="#{{ slide.particles_color }}" data-swiper-parallax="20%"></canvas>
 					<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({{ slide.layer4.url }})"></div>
 
-					<a href="{% url 'index' %}">
-						<button class="button-start home">На главную</button>
-					</a>
-
 				</div>
 			{% endfor %}
-<!--			<div class="swiper-slide slider__item">-->
-<!--				<div class="slider__layer" data-swiper-parallax="42%" style="background-image: url({% static 'witcher/img/screen-2/layer-back.jpg' %})"></div>-->
-<!--				<div class="slider__layer" data-swiper-parallax="31%" style="background-image: url({% static 'witcher/img/screen-2/layer-gera.png' %})"></div>-->
-<!--				<div class="slider__layer" data-swiper-parallax="26%" style="background-image: url({% static 'witcher/img/screen-2/layer-yen.png' %})"></div>-->
-<!--				<canvas class="particles slider__layer" data-color="#55963C" data-swiper-parallax="20%"></canvas>-->
-<!--				<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({% static 'witcher/img/screen-2/layer-front.png' %})"></div>-->
-<!--			</div>-->
-
-<!--			<div class="swiper-slide slider__item">-->
-<!--				<div class="slider__layer" data-swiper-parallax="42%" style="background-image: url({% static 'witcher/img/screen-3/layer-back.jpg' %})"></div>-->
-<!--				<div class="slider__layer" data-swiper-parallax="31%" style="background-image: url({% static 'witcher/img/screen-3/layer-middle.png' %})"></div>-->
-<!--				<div class="slider__layer" data-swiper-parallax="26%" style="background-image: url({% static 'witcher/img/screen-3/layer-ciri.png' %})"></div>-->
-<!--				<canvas class="particles slider__layer" data-color="#CF6B65" data-swiper-parallax="20%"></canvas>-->
-<!--				<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url({% static 'witcher/img/screen-3/layer-front.png' %})"></div>-->
-<!--			</div>-->
 
 		</div>
 	</div>
+
+	<a href="{% url 'index' %}">
+		<button class="button-start home">На главную</button>
+	</a>
 
 
 </body>
