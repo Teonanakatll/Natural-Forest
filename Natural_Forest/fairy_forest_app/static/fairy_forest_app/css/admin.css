@@ -12,13 +12,21 @@ a:link, a:visited, h1 {
     font-weight: 600;
 }
 td img, .form-row img, video {
-    transition: .3s ease;
+    transition: 1s ease;
 }
-td img:hover, .form-row img:hover{
-    width: 100%;
-    height: 100%;
+td img:hover{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+/*    position: absolute;*/
+
 }
 .field-get_video:hover video{
     width: 100% !important;
     height: 100% !important;
+}
+.gallery {
+    margin-right: 60px;
 }

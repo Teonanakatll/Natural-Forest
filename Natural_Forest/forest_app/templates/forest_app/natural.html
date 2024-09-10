@@ -35,25 +35,9 @@
 					<div class="hero-content__p">{{ page.0.layer3_description }}</div>
 					<button class="button-start">{{ page.0.layer3_button }}</button>
 
-				<div class="pag-container">
-					{% if page.has_previous %}
-						<div class="button-prev active"><a href="?page={{ page.previous_page_number }}"><</a></div>
-					{% else %}
-						<div class="button-prev disabled"><span><</span></div>
-					{% endif %}
+					{% include 'includes/button_home.html' %}
 
-					{% if page.has_next %}
-						<div class="button-next active"><a href="?page={{ page.next_page_number }}">></a></div>
-					{% else %}
-						<div class="button-next disabled"><span>></span></div>
-					{% endif %}
-
-				</div>
-
-				<a href="{% url 'index' %}">
-					<button class="button-start home">На главную</button>
-				</a>
-
+					{% include 'includes/pagination.html' %}
 
 				</div>
 			</div>

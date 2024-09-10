@@ -4,10 +4,11 @@
 <head>
 	{% include 'google/google.html' %}
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>{{ page.0.layer2_header }} {{ page.0.layer2_title }}</title>
+	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon">
+
 
 	<link rel="stylesheet" href="{% static 'forest_app/css/pagination.css' %}">
 	<link rel="stylesheet" href="{% static 'fairy_forest_app/css/main.css' %}">
@@ -21,24 +22,8 @@
 </head>
 <body>
 
-	<div class="pag-container">
-		{% if page.has_previous %}
-			<div class="button-prev active"><a href="?page={{ page.previous_page_number }}"><</a></div>
-		{% else %}
-			<div class="button-prev disabled"><span><</span></div>
-		{% endif %}
-
-		{% if page.has_next %}
-			<div class="button-next active"><a href="?page={{ page.next_page_number }}">></a></div>
-		{% else %}
-		 	<div class="button-next disabled"><span>></span></div>
-		{% endif %}
-
-	</div>
-
-	<a href="{% url 'index' %}">
-		<button class="button-start home">На главную</button>
-	</a>
+	{% include 'includes/pagination.html' %}
+	{% include 'includes/button_home.html' %}
 	
 	<div class="wrapper">
 		<div class="content">

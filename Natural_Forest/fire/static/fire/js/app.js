@@ -56,12 +56,20 @@ video.addEventListener('loadedmetadata', function() {
 			}
 		})
 	})
+
+		// Уменьшаем opacity при начале анимации
+	swiperText.on('slideChangeTransitionStart', function() {
+		// добавляем к видео класс chango
+		video.classList.add('change')
+	}).on('slideChangeTransitionEnd', function() {
+		video.classList.remove('change')
+	})
 })
 
-// Уменьшаем opacity при начале анимации
-swiperText.on('slideChangeTransitionStart', function() {
-	// добавляем к видео класс chango
-	video.classList.add('change')
-}).on('slideChangeTransitionEnd', function() {
-	video.classList.remove('change')
-})
+// // Уменьшаем opacity при начале анимации
+// swiperText.on('slideChangeTransitionStart', function() {
+// 	// добавляем к видео класс chango
+// 	video.classList.add('change')
+// }).on('slideChangeTransitionEnd', function() {
+// 	video.classList.remove('change')
+// })

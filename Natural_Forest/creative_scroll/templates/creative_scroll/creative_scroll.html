@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	{% include 'google/google.html' %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon">
+	<title>Creative floating scroll with amazing parallax effect</title>
+	
+	<script src="{% static 'creative_scroll/libs/gsap/gsap.min.js' %}" defer></script>
+	<script src="{% static 'creative_scroll/libs/gsap/ScrollTrigger.min.js' %}" defer></script>
+	<script src="{% static 'creative_scroll/libs/gsap/ScrollSmoother.min.js' %}" defer></script>
+
+	<link rel="stylesheet" href="{% static 'creative_scroll/css/main.css' %}">
+	<link rel="stylesheet" href="{% static 'forest_app/css/pagination.css' %}">
+	<script src="{% static 'creative_scroll/js/app.js' %}" defer></script>
+	
+</head>
+<body>
+
+	{% include 'includes/button_home.html' %}
+
+	{% include 'includes/pagination.html' %}
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="hero-section">
+
+				<!-- data-speed="" - дата атрибут для управления параметром скролла ScrollSmoother: скорость движения, 1-значение по умолчанию-->
+				 <!-- data-lag="" - устанавливает задерхку начала анимации относительно других элементов-->
+				
+				<img data-lag=".3" data-speed=".6" class="hero" src="{% static 'creative_scroll/img/hero.png' %}" alt="alt">
+		
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">creative scroll</h1>
+					</div>
+
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+						<!-- Тег <main> в HTML используется для обозначения основного контента на странице, который относится к основной теме документа. В CSS тег <main> применяется как селектор для стилизации основного контента. -->
+							<div data-speed=".9" class="gallery__left">
+
+								{% for item in l_items %}
+									{% if not item.content_object.draft %}
+										{% if item.content_object.image %}
+												<img class="gallery__item" src="{{ item.content_object.image.url }}" alt="{{ item.content_object.image.title }}">
+										{% else %}
+											<div class="text-block gallery__item">
+												<h2 class="text-block__h">{{ item.content_object.header }}</h2>
+												<p class="text-block__p">{{ item.content_object.text }}</p>
+											</div>
+										{% endif %}
+									{% endif %}
+								{% endfor %}
+
+							</div>
+		
+							<div data-speed="1.1" class="gallery__right">
+
+								{% for item in r_items %}
+									{% if not item.content_object.draft %}
+										{% if item.content_object.image %}
+												<img class="gallery__item" src="{{ item.content_object.image.url }}" alt="{{ item.content_object.image.title }}">
+										{% else %}
+											<div class="text-block gallery__item">
+												<h2 class="text-block__h">{{ item.content_object.header }}</h2>
+												<p class="text-block__p">{{ item.content_object.text }}</p>
+											</div>
+										{% endif %}
+									{% endif %}
+								{% endfor %}
+								
+<!--								<div class="text-block gallery__item">-->
+<!--									<h2 class="text-block__h">Creative floating scroll with amazing parallax effect</h2>-->
+<!--									<p class="text-block__p">Lorem ipsum dolor sit amet, consectetur sdipiscing elit, sed do eiusmod tempor amount scrolling.</p>-->
+<!--								</div>-->
+<!--		-->
+<!--								<img class="gallery__item" src="{% static 'creative_scroll/img/work/4.jpg' %}" alt="alt">-->
+<!--								<img class="gallery__item" src="{% static 'creative_scroll/img/work/5.jpg' %}" alt="alt">-->
+<!--								<img class="gallery__item" src="{% static 'creative_scroll/img/work/5.jpg' %}" alt="alt">-->
+		
+		
+							</div>
+					</main>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>

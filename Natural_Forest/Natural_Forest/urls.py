@@ -25,6 +25,7 @@ urlpatterns = [
     path('', include('fairy_forest_app.urls')),
     path('', include('witcher.urls')),
     path('', include('fire.urls')),
+    path('', include('creative_scroll.urls')),
 ]
 
 if settings.DEBUG:

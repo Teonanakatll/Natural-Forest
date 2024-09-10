@@ -4,9 +4,8 @@
 <head>
 	{% include 'google/google.html' %}
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon"/>
+	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon">
 	<title>Шаблоны красивых сайтов, выполненных с различными эффектами параллакса и 3d. C помощью swiper.js, gsap.js или на чистом css.</title>
 	<link rel="stylesheet" href="{% static 'forest_app/css/main.css' %}">
 	<link rel="stylesheet" href="{% static 'forest_app/css/index.css' %}">
@@ -54,13 +53,11 @@
 
 				<div class="button5">
 					<video src="{% static 'forest_app/video/240.mp4' %}" autoplay loop muted></video>
-					<a href="#">Creative Scroll</a>
+					<a href="{% url 'creative_scroll' %}">Creative Scroll</a>
 				</div>
 			</div>
 
 			</div>
-				
-		</div>
 
 		<div class="layers__item layer4">
 			<canvas class="rain"></canvas>

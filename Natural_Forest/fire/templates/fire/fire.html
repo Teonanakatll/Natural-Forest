@@ -10,6 +10,7 @@
 
 	<script src="{% static 'fire/libs/swiper/swiper-bundle.min.js' %}" defer></script>
 	<link rel="stylesheet" href="{% static 'fire/libs/swiper/swiper-bundle.min.css' %}">
+	<link rel="shortcut icon" href="{% static 'forest_app/img/favicon.ico' %}" type="image/x-icon">
 
 	<link rel="stylesheet" href="{% static 'fire/css/main.css' %}">
 	<link rel="stylesheet" href="{% static 'forest_app/css/pagination.css' %}">
@@ -21,7 +22,7 @@
 
 	<header>
 		<a class="logo" href="#">
-			<img src="../../static/fire/img/logo.svg" alt="alt">
+			<img src="{% static 'fire/img/logo.svg' %}" alt="alt">
 		</a>
 
 		<nav class="menu">
@@ -84,9 +85,7 @@
 
 	</div>
 
-	<a href="{% url 'index' %}">
-		<button class="button-start home">На главную</button>
-	</a>
+	{% include 'includes/button_home.html' %}
 
 	<!-- <div class="pag-container">
 		{% if page.has_previous %}

@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'fairy_forest_app.apps.FairyForestAppConfig',
     'witcher.apps.WitcherConfig',
     'fire.apps.FireConfig',
+    'creative_scroll.apps.CreativeScrollConfig',
 
 
 ]

@@ -12,6 +12,17 @@
   --transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 }
 
+/*@font-face {*/
+/*  font-family: kamerik-3d;*/
+/*  src: url(../fonts/kamerik205-heavy.woff2);*/
+/*  font-weight: 900;*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: merriweather-italic-3d;*/
+/*  src: url(../fonts/merriweather-regular-italic.woff2);*/
+/*}*/
+
 @font-face {
   font-family: kamerik-3d;
   src: url(../fonts/kamerik205-heavy.woff2);
@@ -118,6 +129,7 @@ body {
   font-size: calc(var(--index) * 2.9);
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
   /* Растояние между символами */
   letter-spacing: calc(var(--index) * -.15);
   /* line-height - растояние между строками. 1em – текущий размер шрифта. */
@@ -135,9 +147,10 @@ body {
   font-size: calc(var(--index) * .73);
   /* line-height - растояние сверху */
   line-height: 3;
+  font-weight: normal;
 }
 .button-start {
-	font-family: Arial;
+	font-family: Arial, serif;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: calc(var(--index) * .71);
@@ -170,50 +183,7 @@ body {
 	/* transform: translateX(250%); */
 	bottom: calc(var(--index) * 9);
 }
-.arrow {
-	height: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: calc(var(--index) * 2);
-	border: rgb(255 255 255 / .4) 3px solid;
-	opacity: .7;
-	border-radius: 12em;
-	font-size: calc(var(--index) * 1.2);
-	cursor: pointer;
-	transition: opacity .3s ease, box-shadow .3s ease;
-}
-.arrow:hover, .arrow:focus {
-	opacity: 1;
-	/* box-shadow: 0px 0px 50px 1px rgba(255, 255, 255, 0.3) */
-}
-.arrow.disabled {
-	cursor: default;
-	opacity: 0.35;
-}
-.arrow a {
-	line-height: calc(var(--index) * 2);
-	width: inherit;
-	text-decoration: none;
-	color: #fff;
-}
-.left {
-	position: relative;
-	right: 3px;
-}
-.right {
-	position: relative;
-    left: -3px;
-}
-.right, .left {
-	bottom: 3px;
-}
-span.left {
-	right: 2px;
-}
-span.right {
-	right: 5px;
-}
+
 .layer4, .layer5, .layer6 {
   pointer-events: none;  /* Для взаимодействия со слоями ниже, отключаем события слоёв. */
 }

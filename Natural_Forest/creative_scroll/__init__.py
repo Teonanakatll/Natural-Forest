@@ -1,0 +1,1 @@
+default_app_config = 'creative_scroll.apps.CreativeScrolConfig'

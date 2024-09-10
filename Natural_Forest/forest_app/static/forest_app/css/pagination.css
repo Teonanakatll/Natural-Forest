@@ -73,6 +73,7 @@ span {
 }
 /*Конец пагинации*/
 
+
 .button-start {
 	font-family: Arial;
 	font-weight: 600;
@@ -91,17 +92,19 @@ span {
 	transition: .25s ease-in;
 }
 
-.button-start.home {
+.home {
 	position: fixed;
 	bottom: calc(var(--index) * 8.5);
 	left: calc(var(--index) * 12);
-	/* height: calc(var(--index) * 1.5);
-	width: calc(var(--index) * 6); */
+	height: calc(var(--index) * 1.5);
+	width: calc(var(--index) * 5);
 	font-weight: 200;
 	font-size: calc(var(--index) * .4);
 	padding: calc(var(--index) * .4) calc(var(--index) * .8);
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	text-decoration: none;
 	z-index: 100;
 }
 
